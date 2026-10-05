@@ -234,7 +234,10 @@ def live():
                 if len(hit):
                     rows.append({"type": KIND[k][2], "starts at (s)": a_, "alert at (s)": int(hit.timestamp.min()),
                                  "delay (s)": int(hit.timestamp.min() - a_)})
-        st.dataframe(pd.DataFrame(rows), width="stretch", hide_index=True) if rows else st.caption("No finished events in view yet.")
+        if rows:
+            st.dataframe(pd.DataFrame(rows), width="stretch", hide_index=True)
+        else:
+            st.caption("No finished events in view yet.")
 
 
 live()
