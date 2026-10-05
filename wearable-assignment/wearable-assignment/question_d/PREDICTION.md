@@ -1,0 +1,9 @@
+# Question D, Level 3: prediction (COMMIT BEFORE RUNNING measure_delay.py)
+
+Before measuring: what do I expect for the average and worst delay (anomaly start to alert) for spikes and
+drop-outs, and where do I think most of that delay comes from? Think about: the rule itself (zero vs frozen
+readings), the database commit, and the dashboard refresh interval.
+
+- Average delay: ...
+- Worst delay: ...
+- Main source of delay: ...
