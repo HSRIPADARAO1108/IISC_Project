@@ -1,12 +1,9 @@
-# Question A, Level 3: prediction (COMMIT THIS BEFORE RUNNING detect.py)
+My first experiments (window size, contamination, frozen-reading count) were run
+before I committed predictions. This is my blind prediction for a new experiment.
 
-Question: what happens to recall for silent drift if the rolling z-score window is doubled (30 s -> 60 s)?
+Experiment: raise the z-score threshold from 3.5 to 2.5 (window 30, movement gate on).
 
-My prediction (write it from the logic, in your own words):
-- Direction: recall goes up / down / stays about the same because ...
-- Rough number: ...
-- Reasoning to use: drift rate is 15 bpm / 300 s = 0.05 bpm per second; compare how far the window mean moves
-  with the noise standard deviation (about 1.3 bpm), and remember the z-score only sees the current point
-  against the past window.
-
-Committed at: (git log will show it)
+Prediction:
+- Spike recall will go up a little, because the later seconds of a spike still pass the lower threshold
+- Walking false alarms will stay at 0, because the movement gate (acc < 0.3) blocks them whatever the threshold is.
+- Precision will go down, because normal noise now crosses the threshold more often (more false alarms).

@@ -1,10 +1,8 @@
-# Question B, Level 3: prediction (COMMIT BEFORE RUNNING explain.py)
+My first experiments were run before I committed predictions. This is my blind
+prediction for a new experiment.
 
-For a spike window, a drop-out window and a silent-drift window, which feature do I expect to rank first in
-SHAP, and which in my own perturbation method? Where do I expect the two rankings to disagree, and why?
-(Hint to think about: features that are strongly correlated with each other, and replacing only ONE of them.)
+Experiment: change the window length from 60 s to 30 s.
 
-- Spike: ...
-- Drop-out: ...
-- Silent drift: ...
-- Expected disagreement: ...
+Prediction:
+- The number of alerted windows will stay about the same (around 29), because contamination fixes the share that gets flagged.- 
+- For SHAP vs perturbation agreement, choose less (noisier features make the two methods rank differently) or more (more extreme features make the top feature obvious). Pick one and give your reason in one sentence. Both are defensible.

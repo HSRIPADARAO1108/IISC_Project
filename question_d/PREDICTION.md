@@ -1,9 +1,8 @@
-# Question D, Level 3: prediction (COMMIT BEFORE RUNNING measure_delay.py)
+My first experiments were run before I committed predictions. This is my blind
+prediction for a new experiment.
 
-Before measuring: what do I expect for the average and worst delay (anomaly start to alert) for spikes and
-drop-outs, and where do I think most of that delay comes from? Think about: the rule itself (zero vs frozen
-readings), the database commit, and the dashboard refresh interval.
+Experiment: lower the drift threshold from 8 bpm to 5 bpm.
 
-- Average delay: ...
-- Worst delay: ...
-- Main source of delay: ...
+Prediction:
+- Average drift delay will fall from about 165 s to about 105 s.
+- False alarms will not appear. Normal fluctuation over 5 minutes is only about 1 bpm, which is far below 5 bpm, and walking is blocked by the stillness check.
