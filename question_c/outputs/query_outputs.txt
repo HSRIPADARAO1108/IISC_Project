@@ -1,0 +1,32 @@
+reference NOW = 2026-10-06 12:30 UTC
+rows: readings=21600  alerts=60  (per-user alerts below)
+kind     drop_out  silent_drift  spike
+user_id                               
+1               6             6      8
+2               6             6      8
+3               6             6      8
+
+Q1  Alerts per user in the last 24 hours
+ user_id       name  alerts_24h
+       1 user_alpha          20
+       2  user_beta           0
+       3 user_gamma           8
+
+Q2  Users with more than 5 alerts in one hour
+ user_id         hour_utc  alerts_in_hour
+       1 2026-10-06 11:00              12
+       2 2026-10-05 07:00              12
+       3 2026-10-05 11:00               8
+       3 2026-10-05 12:00              10
+
+Q3  Average heart rate per user per hour
+ user_id         hour_utc  avg_hr  samples
+       1 2026-10-06 10:00   83.42     1785
+       1 2026-10-06 11:00   86.49     3578
+       1 2026-10-06 12:00   83.00     1800
+       2 2026-10-05 06:00   89.42     1785
+       2 2026-10-05 07:00   92.49     3578
+       2 2026-10-05 08:00   89.00     1800
+       3 2026-10-05 11:00   78.74     2685
+       3 2026-10-05 12:00   84.12     3578
+       3 2026-10-05 13:00   74.09      900

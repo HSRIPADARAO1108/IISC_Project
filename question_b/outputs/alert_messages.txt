@@ -1,0 +1,3 @@
+[spike] t=1560s: Your heart rate shot up to 130 bpm (your normal is about 82) while you were sitting still. Main signals: heart-rate trend and highest heart rate.
+[drop_out] t=400s: Your sensor stopped reporting: the heart rate read zero for part of this minute. Check the strap fit. Main signals: heart-rate variability and lowest heart rate.
+[silent_drift] t=4090s: Your resting heart rate is creeping up by about 2.9 bpm per minute without any movement. Please rest and re-check. Main signals: lowest heart rate and average heart rate.  (note: the detector did NOT flag this window)
