@@ -104,7 +104,7 @@ def rolling_z(x, w):
     return z
 
 
-def zdet(w, gate=True, thr=3.5):
+def zdet(w, gate=True, thr=2.5):
     p = np.abs(rolling_z(hr, w)) > thr
     if gate:
         p &= acc < 0.3                                # moving => walking => normal

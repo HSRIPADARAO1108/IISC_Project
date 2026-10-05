@@ -22,7 +22,7 @@ df = load()
 hr, acc, atype = df.hr.to_numpy(), df.acc.to_numpy(), df.anomaly_type.to_numpy()
 
 # ---------------- window features: 60 s windows, new window every 10 s ----------------
-WIN, STEP = 60, 10
+WIN, STEP = 30, 10
 FEATS = ["hr_mean", "hr_std", "hr_min", "hr_max", "hr_slope", "acc_mean", "acc_std", "flat_run"]
 PLAIN = {"hr_mean": "average heart rate", "hr_std": "heart-rate variability", "hr_min": "lowest heart rate",
          "hr_max": "highest heart rate", "hr_slope": "heart-rate trend", "acc_mean": "movement",
