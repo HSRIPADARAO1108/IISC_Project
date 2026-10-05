@@ -53,7 +53,7 @@ meta = pd.DataFrame(meta, columns=["start", "label"])
 print(f"S={S}  windows={len(X)}  label counts: {meta.label.value_counts().to_dict()}")
 
 # ---------------- Level 1: detector + SHAP ----------------
-clf = IsolationForest(n_estimators=200, contamination=0.08, random_state=S).fit(X)
+clf = IsolationForest(n_estimators=200, contamination=0.04, random_state=S).fit(X)
 score = lambda M: -clf.decision_function(M)                  # higher = more anomalous
 sc = score(X)
 alert = clf.predict(X) == -1

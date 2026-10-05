@@ -18,7 +18,7 @@ STILL = 0.3          # acc below this = person is still (walking is 0.8 - 2.5)
 
 
 class AlertEngine:
-    def __init__(self, jump=30.0, flat_n=4, drift_rise=8.0, drift_span=300,
+    def __init__(self, jump=30.0, flat_n=3, drift_rise=8.0, drift_span=300,
                  cooldown=None):
         self.jump, self.flat_n = jump, flat_n
         self.drift_rise, self.drift_span = drift_rise, drift_span

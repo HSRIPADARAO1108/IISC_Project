@@ -33,6 +33,7 @@ Seed S = 2518
   false alarms during walking: 0 of 1607 walking seconds
 
 --- Level 3: silent-drift recall when the window is doubled ---
+  w= 15s  drift recall=0.003  drift events caught=4/6
   w= 30s  drift recall=0.002  drift events caught=3/6
   w= 60s  drift recall=0.001  drift events caught=2/6
   w=120s  drift recall=0.001  drift events caught=2/6

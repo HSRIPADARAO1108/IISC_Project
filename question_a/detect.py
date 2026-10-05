@@ -119,7 +119,7 @@ res60 = report("z-score w=60 with movement gate", p60)
 
 # ===================== Level 3: window size and missed anomalies =====================
 print("\n--- Level 3: silent-drift recall when the window is doubled ---")
-for w in [30, 60, 120, 300]:
+for w in [15, 30, 60, 120, 300]:
     r = report(f"w={w}", zdet(w), quiet=True)
     print(f"  w={w:3d}s  drift recall={r['silent_drift'][1]:.3f}  drift events caught={r['silent_drift'][3]}/6")
 print("  -> compare with the prediction you committed in question_a/PREDICTION.md")
