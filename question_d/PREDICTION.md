@@ -11,3 +11,4 @@ Experiment run after committing this prediction (commit 9d244c8): drift threshol
 - Average drift alert delay: 164.7 s -> 108.8 s (individual delays 80 to 125 s).
 - Spike delay 0 s, drop-out delay 0.5 s on average.
 - False alarms: 0 of 20 alerts.
+Was my prediction right? Yes. I predicted about 105 s and got 108.8 s, with no false alarms. The extra few seconds come from the engine averaging 20 readings.

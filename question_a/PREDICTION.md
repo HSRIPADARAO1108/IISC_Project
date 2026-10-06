@@ -12,3 +12,4 @@ Experiment run after committing this prediction (commit 9d244c8): z-score thresh
 - Spike recall: 0.490 -> 0.816. Spike precision: 0.585 -> 0.342.
 - Walking false alarms: 0 with the gate (79 without the gate, 17 before the change).
 - Drift recall stayed tiny (0.028) even though all 6 drift events show a flagged second, because the detector only hits isolated noisy seconds.
+Was my prediction right? Mostly. Spike recall went up, precision went down and walking false alarms stayed 0, as I predicted. But I said "up a little" and it rose a lot (0.49 to 0.82).
