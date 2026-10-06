@@ -31,3 +31,5 @@ per-second z-score or Isolation Forest cannot see a 0.05 bpm/s climb (see questi
 ## Libraries and sources
 numpy, pandas, scikit-learn (IsolationForest, metrics), shap (TreeExplainer), matplotlib, plotly, streamlit, sqlite3.
 Dashboard fonts: IBM Plex via Google Fonts. AI assistance is declared in `PERSONAL_INTELLIGENCE.md`.
+
+S = 2518, taken from the digits of USN 1DA25SCS18 (25 and 18), since the USN does not end in four digits.
